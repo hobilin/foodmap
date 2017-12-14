@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FOODMAP</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <script src="assets/bootstrap/js/jquery.js" charset="utf-8"></script>
+</head>
+<body>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+      <span class="glyphicon glyphicon-remove" aria-hidden="true" id="close"></span>
+    <div class="modal-content">
+    </div>
+  </div>
+
+
+<section class="container-fluid" id="splash">
+  <div class="container">
+    <div class="row">
+      <h1 id="title-splash" class="col-xs-8 col-xs-offset-2">Foodmap</h1>
+    </div>
+  	<div class="row">
+  	<div class="load-overlay">
+  			<div class="loader">
+  			  <i></i><i></i><i></i><i></i><i></i>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</section>
+
+<section class="container-fluid" id="main-page">
+<div class="container-fluid">
+<div class="row">
+  <div class="page-header">
+  <h1>Foodmap</h1>
+</div>
+</div>
+<div class="row" id="map">
+  <iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13317.527286612896!2d-70.63420420356569!3d-33.439357546488154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses-419!2scl!4v1513105514123" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="row">
+  <div class="container col-xs-12">
+  <div class="dropdown">
+    <span class="selLabel">Filtrar Restaurants</span>
+    <input type="hidden" name="cd-dropdown">
+    <ul class="dropdown-list">
+      <li id="koreana" data-value="1">
+        <span>Koreana</span>
+      </li>
+      <li id="vegana" data-value="2">
+        <span>Vegana</span>
+      </li>
+      <li id="italiana" data-value="3">
+        <span>Italiana</span>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail koreana  modal-trigger" id="chicken-story">
+        <img src="assets/img/koreana/chicken-story.jpg" alt="...">
+        <div id="overlay1">
+   <p>Chicken Story</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail koreana  modal-trigger" id="dae-jang">
+        <img src="assets/img/koreana/dae-jang.jpg"  alt="...">
+        <div id="overlay2">
+   <p>Dae Jang Kum</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail koreana  modal-trigger" id="hansoban">
+        <img src="assets/img/koreana/hansoban.jpg" alt="...">
+        <div id="overlay3">
+   <p>Hansobam</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12" >
+      <a href="#modal1" class="thumbnail koreana  modal-trigger" id="sukine">
+        <img src="assets/img/koreana/sukine.jpg" alt="...">
+        <div id="overlay4">
+   <p>Sukine</p>
+ </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail vegana  modal-trigger"  id="katako">
+        <img src="assets/img/Vegano/katako-vegan.jpeg" alt="...">
+        <div id="overlay5">
+   <p>Katako Vegan</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail vegana  modal-trigger" id="huerto">
+        <img src="assets/img/Vegano/el-huerto.jpg"  alt="...">
+        <div id="overlay6">
+   <p>El Huerto</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail vegana  modal-trigger" id="el-vegano">
+        <img src="assets/img/Vegano/el-vegano.jpg" alt="...">
+        <div id="overlay7">
+   <p>El Vegano Chile</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail vegana  modal-trigger" id="bunker">
+        <img src="assets/img/Vegano/vegan-bunker.png" alt="...">
+        <div id="overlay8">
+   <p>Vegan Bunker</p>
+ </div>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail italiana  modal-trigger" id="trattoria">
+        <img src="assets/img/italiano/trattoria.jpg" alt="...">
+        <div id="overlay9">
+   <p>Trattoria Rita</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail italiana  modal-trigger" id="signore">
+        <img src="assets/img/italiano/signore.jpg"  alt="...">
+        <div id="overlay10">
+   <p>Signore</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail italiana  modal-trigger" id="golfo">
+        <img src="assets/img/italiano/golfo.jpg" alt="...">
+        <div id="overlay11">
+   <p>Golfo Di Napoli</p>
+ </div>
+      </a>
+    </div>
+    <div class="col-xs-12">
+      <a href="#modal1" class="thumbnail italiana  modal-trigger" id="fabbrica">
+        <img src="assets/img/italiano/fabbrica.jpg" alt="...">
+        <div id="overlay12">
+   <p>La Fabbrica</p>
+ </div>
+      </a>
+    </div>
+  </div>
+
+
+</div>
+</section>
+
+<script src="assets/js/app.js" charset="utf-8"></script>
+</body>
+</html>
